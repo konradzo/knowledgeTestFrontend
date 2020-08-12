@@ -1,0 +1,8 @@
+
+<p>Category name: {{category.name}}</p>
+<p>description: {{category.description}}</p>
+<h2 *ngIf="category.examList.length>0">Exam list</h2>
+<div *ngFor="let exam of category.examList">
+  <p>Header: {{exam.header}}</p>
+  <p>Description: {{exam.description}}</p>
+</div>

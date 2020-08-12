@@ -18,6 +18,11 @@ export class CategoryService {
       map(response => response.categories)
     );
   }
+
+  getCategory(categoryId: number): Observable<Category> {
+    const searchUrl = this.baseUrl + '/' + categoryId;
+    return this.httpClient.get<Category>(searchUrl);
+  }
 }
 
 interface GetResponse {

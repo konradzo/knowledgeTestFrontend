@@ -1,5 +1,6 @@
+<h1>Category list check!</h1>
 <div>
   <div *ngFor="let category of categories">
-    <p>Id:{{category.id}},Name: {{category.name}}, description: {{category.description}}, exams list size: {{category.examList.length}}</p>
+    <a routerLink="/categories/{{category.id}}"><p>Id:{{category.id}},Name: {{category.name}}, description: {{category.description}}, exams list size: {{category.examList.length}}</p></a>
   </div>
 </div>
