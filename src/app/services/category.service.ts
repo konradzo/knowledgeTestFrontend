@@ -8,7 +8,7 @@ import {map} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class CategoryService {
-  private baseUrl = 'http://localhost:8080/api/categories';
+  private baseUrl = 'http://localhost:8030/api/categories';
 
   constructor(private httpClient: HttpClient) {
   }

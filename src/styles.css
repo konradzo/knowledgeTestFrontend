@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Poppins,sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #666;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  height: 80px;
+  background-color: cornflowerblue;
+}
+
+.top-menu{
+  padding-top: 20px;
+  width: 1010px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-menu-item{
+  float: left;
+  width: 200px;
+  height: 50px;
+  background-color: brown;
+  position: relative;
+  border: 1px solid yellow;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.top-menu-item .top-menu-item-text{
+  position: absolute;
+  margin: 10px auto;
+  left: 30px;
+  background-color: aqua;
+}
+
+.main-content{
+  background-color: darkgoldenrod;
+}

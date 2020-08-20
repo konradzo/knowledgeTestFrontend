@@ -1,3 +1,46 @@
+<div class="page-wrapper">
 
-<!--<app-category-list></app-category-list>-->
-<router-outlet></router-outlet>
+  <!-- PAGE CONTAINER -->
+  <div class="page-container">
+    <header class="header-desktop">
+      <div class="top-menu">
+        <div class="top-menu-list">
+          <div class="top-menu-item">
+            <div class="top-menu-item-text">
+              <a routerLink="/categories"><h4>Testy</h4></a>
+            </div>
+          </div>
+          <div class="top-menu-item">
+            <div class="top-menu-item-text">
+              <a href="#"><h4>Moje wyniki</h4></a>
+            </div>
+          </div>
+          <div class="top-menu-item">
+            <div class="top-menu-item-text">
+              <a href="#"><h4>Rankingi</h4></a>
+            </div>
+          </div>
+          <div class="top-menu-item">
+            <div class="top-menu-item-text">
+              <a href="#"><h4>Mój profil</h4></a>
+            </div>
+          </div>
+          <div class="top-menu-item">
+            <div class="top-menu-item-text">
+              <a href="#"><h4>Wyloguj</h4></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- END PAGE CONTAINER -->
+
+  <!-- MAIN CONTENT-->
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- END MAIN CONTENT-->
+
+</div>
